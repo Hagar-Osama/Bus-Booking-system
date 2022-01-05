@@ -1,19 +1,12 @@
 <?php
 
-namespace App\Http\Interfaces\Admin;
+namespace App\Http\Interfaces;
+use Illuminate\Http\Request;
 
 interface tripInterface
 {
-    public function index();
+    public function show(Request $request);
 
-    public function create();
 
-    public function store($request);
-
-    public function edit($id);
-
-    public function update($request);
-
-    public function destroy($request);
 
 }

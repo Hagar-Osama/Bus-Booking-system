@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Interfaces\Admin\tripInterface;
+use App\Http\Interfaces\tripInterface;
 use Illuminate\Http\Request;
 
 class TripController extends Controller
@@ -15,9 +15,9 @@ class TripController extends Controller
 
     }
 
-    public function index()
+    public function show(Request $request)
     {
-        return $this->tripInterface->index();
+        return $this->tripInterface->show($request);
     }
 
 }
