@@ -18,7 +18,7 @@ class TripSeeder extends Seeder
             [
                 'start_station' => 1,
                 'end_station' => 5,
-                'status' => false
+                'status' => true
             ],
         ];
         foreach ($trips as $trip) {

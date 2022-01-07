@@ -17,7 +17,7 @@ class CreateTripSeatsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('trip_id');
             $table->foreign('trip_id')->references('id')->on('trips')->onDelete('CASCADE');
-            $table->boolean('status')->default(0);
+            $table->boolean('status')->default(true);
             $table->timestamps();
         });
     }

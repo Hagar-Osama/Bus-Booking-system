@@ -17,7 +17,7 @@ class CreateTripsTable extends Migration
             $table->id();
             $table->integer('start_station');
             $table->integer('end_station');
-            $table->boolean('status')->default(0);
+            $table->boolean('status')->default(true);
             $table->timestamps();
         });
     }
